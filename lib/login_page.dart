@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(MaterialApp(
-    home: MyApp(),
-  ));
-}
+
 
 class MyApp extends StatefulWidget {
   @override
@@ -50,6 +46,8 @@ class _State extends State<MyApp> {
                           fontSize: 22),
                     )),
                 Container(
+                  width: 500,
+                  height: 300,
                   padding: EdgeInsets.all(10),
                   child: TextField(
                     decoration: InputDecoration(
@@ -59,6 +57,8 @@ class _State extends State<MyApp> {
                   ),
                 ),
                 Container(
+                  width: 500,
+                  height: 300,
                   padding: EdgeInsets.fromLTRB(10, 10, 10, 0),
                   child: TextField(
                     keyboardType: TextInputType.emailAddress,
@@ -80,6 +80,8 @@ class _State extends State<MyApp> {
                 ),
                 Container(
                     height: 600,
+                    width: 500,
+
                     // padding:BorderRadius.circular(50.10),
                     child: RaisedButton(
                       textColor: Colors.white,

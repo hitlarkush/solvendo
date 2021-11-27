@@ -1,49 +1,60 @@
 import 'package:flutter/material.dart';
-import 'login_page.dart';
 
 void main()
 {
   runApp(Solvendo());
 }
 
-class Solvendo extends StatelessWidget {
+class Solvendo extends StatefulWidget {
+  @override
+  _SolvendoState createState() => _SolvendoState();
+}
 
+class _SolvendoState extends State<Solvendo> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-        home: Scaffold(
-          backgroundColor: Colors.white,
-        body: ListView(
+      home: Scaffold(
+        body:ListView(
           children: [
             Stack(
               children: [
 
-            Container(
-            height: 300,
-              child: Row(
-                children: [
-              Text('''Reimagining
-                    Stressed Assets''',
-                color:Colors.blueAccent,
-                style:TextStyle.tryon,
-              ),
-              ],
-            ),
-            ),//home
+                Container(
+                  height: 300,
+                  child: Row(
+                    children: [
+                      Text('''Reimagining
+                      Stressed Assets''',
+                          style:TextStyle(color:Colors.blueAccent )
+                      ),
+                    ],
+                  ),
+                ),//home
 
-            Container(
-            height: 150,
-            decoration: BoxDecoration(
-                color:Colors.blueAccent,
-                borderRadius: BorderRadius.only
-                  (bottomLeft: Radius.circular(80.0))
-            ),
-            // Body(Image:images/image.png)
-            ), //AppBar
-            ),
-        ],
+                Container(
+                  height: 150,
+                  decoration: BoxDecoration(
+                      color:Colors.blueAccent,
+                      borderRadius: BorderRadius.only
+                        (bottomLeft: Radius.circular(80.0))
+                  ),
+                  // Body(Image:images/image.png)
+                ), //AppBar
+
+              ],
+            )
+          ],
+        ),
       ),
     );
   }
 }
+
+
+
+/*
+
+
+
+ */
